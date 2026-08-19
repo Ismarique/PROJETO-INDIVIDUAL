@@ -1,0 +1,28 @@
+{
+  "name": "backend-projetoindividual",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Ismarique/PROJETO-INDIVIDUAL#readme",
+  "bugs": {
+    "url": "https://github.com/Ismarique/PROJETO-INDIVIDUAL/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ismarique/PROJETO-INDIVIDUAL.git"
+  },
+  "license": "ISC",
+  "author": "Ismael Henrique Cardoso dos Santos",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "modules": "^0.4.0",
+    "node": "^26.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "typescript": "^7.0.2"
+  }
+}
