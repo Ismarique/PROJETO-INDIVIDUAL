@@ -1,0 +1,23 @@
+import { Router } from "express";
+import type { Request, Response } from "express";
+import ProdutoController from "./controller/ProdutoController.js";
+
+const router = Router();
+
+router.get("/api", (req: Request, res: Response) => {
+    res.status(200).json({ mensagem: "Olá seja bem-vindo!"});
+});
+
+router.get('/api/produtos', ProdutoController.todos);
+router.post('/api/produtos', ProdutoController.novo);
+//router.get('/produtos/:idProduto', ProdutoController.produto);
+//router.put('/produtos/:idProduto', ProdutoController.atualizarProduto);
+//router.delete('/produtos/:idProduto', ProdutoController.removerProduto);
+//router.get('/produtos/categoria/:idCategoria', ProdutoController.produtosPorCategoria);
+//router.get('/produtos/status/:status', ProdutoController.produtosPorStatus);
+//router.get('/produtos/estoque-baixo', ProdutoController.produtosEstoqueBaixo);
+//router.get('/produtos/resumo', ProdutoController.resumoProdutos);
+
+
+
+export {router};
